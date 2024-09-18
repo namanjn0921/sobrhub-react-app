@@ -1,0 +1,90 @@
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.doctor-booking-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #282828;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  color: #ff7300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.doctor-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.doctor-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+  transform: scale(1.05);
+}
+
+.doctor-card.selected {
+  border: 2px solid #ff7300;
+}
+
+.slot-selection {
+  margin-bottom: 20px;
+}
+
+.slot-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slot-button {
+  background-color: #ff7300;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slot-button:hover {
+  background-color: #e66000;
+}
+
+.slot-button.selected {
+  background-color: #333;
+  border: 2px solid #ff7300;
+}
+
+.book-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff7300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.book-button:hover {
+  background-color: #e66000;
+}

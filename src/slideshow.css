@@ -1,0 +1,72 @@
+/* slideshow.css */
+
+/* Main container for the slider */
+.slider-container {
+
+
+
+  width: 95vw; /* Full viewport width */
+  height: 520px; /* Full viewport height */
+  position: relative; /* Needed for positioning slick arrows */
+  top :555px;
+  overflow: hidden; /* Hide any overflow from images */
+  background-color: #303030; /* Match the background theme */
+}
+
+/* Individual slide container */
+.slide {
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Full height of the parent container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image styling for slides */
+.imageS {
+  width: 100%; /* Full width of the container */
+  height: 600px; /* Full height of the container */
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+}
+
+/* Slick dots customization */
+.slick-dots {
+  bottom: 20px; /* Position the dots */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff69b4; /* Active dot color */
+}
+
+/* Slick arrows customization */
+.slick-prev,
+.slick-next {
+  width: 50px; /* Adjust size of navigation arrows */
+  height: 50px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+  border-radius: 50%; /* Round buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: #fff; /* Arrow color */
+}
+
+.slick-prev {
+  left: 10px; /* Position left arrow */
+}
+
+.slick-next {
+  right: 10px; /* Position right arrow */
+}

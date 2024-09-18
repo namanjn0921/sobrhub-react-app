@@ -1,0 +1,83 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Page Reset */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Container */
+header {
+  width: 100%;
+   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  background-color: #303030;
+}
+
+/* Logo and Sign-in Section */
+.logodiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 80px;
+  margin-top: 20px; 
+}
+
+/* Sign-In and Register Buttons */
+.sign {
+  display: flex;
+  gap: 10px;
+}
+
+.signin {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #505050;
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+}
+
+.signin:hover {
+  background-color: #606060;
+}
+
+/* Components (Navigation Menu) */
+.comps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #303030;
+   /* To ensure it sits below the fixed logo/sign-in section */
+}
+
+.compsb {
+  padding: 10px 20px;
+  margin: 0 15px;
+  border: none;
+  border-bottom: 5px solid orange;
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.compsb:hover {
+  background-color: #505050;
+}
+
+/* Logo Image */
+.logoimg {
+  height: 65px;
+  width: auto;
+  border-radius: 5px;
+}
